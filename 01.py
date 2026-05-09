@@ -1,12 +1,16 @@
-"""3. Um sistema de caixa vai recebendo valores de compras de clientes. 
-O operador digita os valores das compras. 
-O sistema só para quando digitar o número 0 (zero), e no final mostra o total do dia"""
+'''
+1. Crie um programa que peça números ao usuário e vá somando esses valores. 
+Enquanto a soma for menor que 100, o programa deve continuar pedindo novos números
+e exibindo a soma atual.  Quando atingir ou ultrapassar 100, o programa deve encerrar
+e mostrar uma mensagem final.
+'''
 
-total = 0
-while True:
-    valor = float(input("Digite o valor da compra: "))
-    total = valor + total
-    print(total)
-    if valor == 0:
-        break
-print(f"Subtotal {total}")
+soma = 0
+num = 0
+num2 = 0
+while soma <100:
+    num = int(input("Diga um número para somar: "))
+    num2 = int(input("Diga o próximo número para somar: "))
+    soma = num + num2
+    print(soma)
+
